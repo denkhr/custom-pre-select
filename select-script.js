@@ -26,7 +26,7 @@ document.querySelectorAll('.select-wrapper').forEach(function (selectWrapper) {
     //  Pre-selection interactions + adding value to hidden input
     ctaButtons.forEach(function(option) {
         option.addEventListener('click', function() {
-            document.querySelector('.select-button').innerText = this.dataset.value;
+            selectButton.innerText = this.dataset.value;
             selectInput.value = this.dataset.value;
         })
     })
